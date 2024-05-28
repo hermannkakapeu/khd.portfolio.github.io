@@ -4687,3 +4687,61 @@ input, select, textarea {
 		}
 
 	}
+
+
+	/* Style for the popup container */
+    .popup-container {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(58, 134, 173);
+        padding: 10px;
+        border: 1px solid #2e0ebe;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+        /* Set width and max-height for the popup */
+        width: 2000px;
+        max-height: 80vh;
+       overflow-y:  auto ; /*  Add scroll if content overflows */
+    }
+
+    /* Style for the popup content */
+    .popup-content {
+        /* Define size and layout of content */
+        max-width: 100%;
+    }
+
+    /* Style for the table inside the popup */
+    .popup-content table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .popup-content th, .popup-content td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+/* Style pour le conteneur de l'image */
+.image-container {
+    position: relative; /* Pour que les images soient positionnées relativement à ce conteneur */
+    width: 500px; /* Largeur de la grande image */
+    height: 300px; /* Hauteur de la grande image */
+}
+
+/* Style pour la grande image */
+.grande-image {
+    width: 100%; /* Ajuster la largeur de la grande image à celle du conteneur */
+    height: 100%; /* Ajuster la hauteur de la grande image à celle du conteneur */
+}
+
+/* Style pour la petite image */
+.petite-image {
+    position: absolute; /* Position absolue pour la petite image */
+    top: 50px; /* Position par rapport au haut */
+    left: 50px; /* Position par rapport à gauche */
+    /* Ajustez top et left selon vos besoins pour positionner la petite image où vous le souhaitez */
+}
